@@ -1,0 +1,81 @@
+
+	<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CSS/CSS.css">
+	<title>JavaScript</title>
+	<script>
+		alert("bienvenido/a, en esta sección aprenderá los conocimientos básicos de JavaScript, primero le recomendamos visitar la sección de HTML y CSS o probablemente no entienda muchas cosas. Por favor, proporcione la informacion que se le indique para que la página funcione, no tiene porque ser real pero si se pide una fecha tiene que ser una fecha")
+		nom = prompt("Ingrese su nombre por favor");
+		dia = prompt ("Indique la fecha por favor");
+		com = prompt ("Escriba el comentario que quiera")
+		edad = prompt ("¿Cuál es su edad?(no incluya la palabra años)")
+		var datos = [nom +" "+ dia +" "+ com + " "+ edad]
+	</script>
+</head>
+<body>
+	
+	
+	
+	<header><!--aquí va el menu-->
+		
+		<h1 class=text><b><u>Conocimientos básicos de JavaScript</u></b></h2>
+		<h3>
+			<script>
+				document.write("Visitado por "+nom+", de "+edad+" años el "+dia+". Su comentario ha sido el siguiente: "+com)
+			</script>
+		
+		</h3>
+		<nav class=menu>
+		
+			<ul>
+				<li><a href="file:///C:/Users/ricar/Desktop/Sitio%20web%20proyecto%20personal/Haga%20click%20aqui%20para%20ver%20el%20sitio%20web.html">Instrucciones</a></li>
+				<li><a href="file:///C:/Users/ricar/Desktop/Sitio%20web%20proyecto%20personal/No_abrir.html">HTML</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="file:///C:/Users/ricar/Desktop/Sitio%20web%20proyecto%20personal/CSS.html">JavaScript</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!--<section class="wrapper"><!--contiene lo importante y lo no importante-->
+		<section class="main"><!--contiene el contenido principal-->
+			<section class="article">
+				
+				<article class=indice2>
+				<h2><b><u>Índice</u></b></h2>
+				<ol>
+					<li class=indice > <a href="#CH">¿Qué es JavaScript?</a></li>
+					<li class=indice > <a href="#W">Lo más básico de JavaScript</a></li>
+					
+				</ol>
+				</article>
+				<article class=hola>
+					<h2 id=CH>¿Qué es JavaScript?</h2>
+					<p>Durante este curso de JavaScript, solamente sera explicado lo más básico de este lenguaje ya que es muy complicado. Además, si se 
+					quisiera explicar todo se necesitaría un sitio web exclusivo para él. </p>
+				</article>
+				<article class=hola>
+					<h2 id=W>Lo más básico de JavaScript</h2>
+					<p> 
+					<script>
+						document.write(datos)
+					</script>
+					</p>
+				
+			</section>
+		</section>
+			<aside>
+			<h3>Imagenes</h3>
+				<script>
+					document.write(datos)
+				</script>
+			</aside><!-- google lo toma como tonteria (imagenes, publicidad...)-->
+			
+		
+		
+		<footer>
+			<p>Ricardo González Presa - 2021</p>
+		</footer>
+</body>
+</html>

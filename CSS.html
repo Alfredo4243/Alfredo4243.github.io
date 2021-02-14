@@ -1,0 +1,182 @@
+
+	<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<link rel="stylesheet" href="CSS/CSS.css">
+	<script>
+		alert("bienvenido/a, en esta sección aprenderá los conocimientos básicos de CSS, primero le recomendamos visitar la sección de HTML o probablemente no entienda nada.")
+	</script>
+</head>
+<body>
+	
+	<!--<div>
+		Un texto es una composición de signos codificados en unsistema de escritura que forma una unidad de sentido. 
+		También es una composición de caracteres imprimibles generados por un algoritmo de cifrado que, aunque no
+		tienen sentido para
+	</div> (También se pueden poner imagenes en div)-->
+	
+	<header><!--aquí va el menu-->
+		
+		<h1 class=text><b><u>Conocimientos básicos de CSS</u></b></h2>
+		<nav class=menu>
+			<ul>
+				<li><a href="file:///C:/Users/ricar/Desktop/Sitio%20web%20proyecto%20personal/Haga%20click%20aqui%20para%20ver%20el%20sitio%20web.html">Instrucciones</a></li>
+				<li><a href="file:///C:/Users/ricar/Desktop/Sitio%20web%20proyecto%20personal/No_abrir.html">HTML</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="file:///C:/Users/ricar/Desktop/Sitio%20web%20proyecto%20personal/JS.html">JavaScript</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!--<section class="wrapper"><!--contiene lo importante y lo no importante-->
+		<section class="main"><!--contiene el contenido principal-->
+			<section class="article">
+				
+				<article class=indice2>
+				<h2><b><u>Índice</u></b></h2>
+				<ol>
+					<li class=indice > <a href="#CH">¿Qué es CSS?</a></li>
+					<li class=indice > <a href="#W">Los selectores de CSS</a></li>
+					<li class=indice > <a href="#A">Las maneras principales para dar formato con CSS</a></li>
+					<li class=indice > <a href="#n">Lo más complejo de CSS</a></li>
+				</ol>
+				</article>
+				<article class=hola>
+					<h2 id=CH>¿Qué es CSS?</h2>
+				
+					<p>CSS es básicamente el formato de una página web. Para utilizarlo, es completamente necesario saber HTML y crear una página web con este. Es un 
+					lenguage más facil de entender que HTML pero un poco más dificil de memorizar ya que tiene muchas cosas. En vez de utilizar etiquetas como HTML, este 
+					lenguage utiliza selectores. Es decir, se seleccióna una parte de HTML con los selectores y se edita lo seleccionado. Para que funcione hay que escribir 
+					esto dentro de le etiqueta head de HTML: [link rel="stylesheet" href="carpeta donde esta guardado el archivo de CSS/Nombre del archivo de CSS"] (Recuerda que [ ] en realidad es < >)
+					Es de suma importancia que al guardar el archivo de CSS, el nombre termine en .css y que se encuentre dentro de una carpeta y que esta carpeta se encuentre a su vez en 
+					la misma carpeta que el documento HTML.</p>
+				</article>
+				<article class=hola>
+					<h2 id=W>Los selectores de CSS</h2>
+					<p>Lo más básico de CSS son los selectores. Todos los selectores tienen un mismo formato, no hay extepciones. El formato es 
+					"uno o varios selectores {formato que se quiere dar a seleccionado por los selectores}" (no hay que poner las comillas). El selector 
+					más simple es el universal, que se representa por el símbolo *. Como su nombre indica, el formato que se le de a esto afectará a toda 
+					la página web al menos que haya otros selectores, ya que el universal es el menos prioritario. Hay que tener cuidado a la hora de crear 
+					un formato a una página web ya que si dos selectores de igual prioridad se contradicen, esto puede causar que todo el formato se estropé 
+					hasta que se arregle el contradicho. Hay varios tipos de selecytores, pero los principales son los siguientes:
+					<ol class=aa></p>
+						<li><b>Selector universal: </b>Ya ha sido explicado.</li>
+						<li><b>Selectores de una etiqueta de HTML: </b>Estos selectores dan formato a la etiqueta especificada. Su formato es "etiqueta{formato}"</li>
+						<li><b>Selectores de class: </b>Estos selectores dan formato a una class (se explica lo que es en el diguiente párrafo). Su formato es ".nombre del class {formato}"</li>
+						<li><b>Selectores combinados: </b>Estos selectores pueden afectar a varias etiquetas y clases a la vez o a las etiquetas o class de un tipo que se 
+						encuentran en el interior de otras. Su formato es: "etiqueta o class, etiqueta o class, etiqueta o class... {formato}(en este caso el formato afectara 
+						a todo lo especificado)". Su otro formato es: "etiqueta o class etiqueta o class... {formato}"(en este caso, el formato afecta a la etiqueta/class que 
+						esté dentro de la etiqueta/class) Básicamente, si lleva comas entra las etiquetas y/o class es el primer caso y si no el segundo</li>
+					</ol>
+					<p>Para poder trabajar con CSS, es muy importante conocer lo que es una class. Una class es un atributo que funciona igual que el id pero sirve 
+					para CSS. Su estructura es así: "class=lo que sea". Si en CSS se escribiese (sin comillas) ".lo que sea {formato}", el formato afectaría a todos los 
+					elementos que tengan este class. 
+					</p>
+				</article><!--google lo toma como importante-->
+				
+				<article class=hola>
+					<h2 id=A>Las maneras principales para dar formato con CSS</h2>
+					<p>En CSS hay muchas maneras de dar formato al texto. Por ello, solamente mencionaré las principales y no las secundarias (hay 
+					incluso opciones que te permiten especificar el espacio entre letra y letra). Es necesario muchas veces proporcionar un valor. Las principales 
+					formas de darlo son por pixeles y por porcentages. Personalmente, los porcentages me parecen mejor ya que un pixel es una medida absoluta 
+					mientras que un porcentage de la pantalla es relativa. Es decir, los porcentages permiten a la página web adaptarse a pantallas pequeñas de una 
+					manera muchisimo mas simple que con porcentages. También hay varias maneras para dar color a las páginas web, pero la más utilizada es el 
+					código hexadecimal (no hay ninguna manera de aprenderse el código hexadecimal, hay que busc ar en internet páginas web que te dejan 
+					elegir cualquier tono de color y te dan su código hexadecimal. Por último, todo el código hexadecimal va introducido por #). El formato se escribe dentro de 
+					las llaves de los selectores y su formato es así: formato:algo;. Aquí hay una lista con las formas de dar formato más comunes (la mayoría se pueden sacar por lógica si se sabe inglés):
+					<ol class=aa>
+					<li>background:#código hexadecimal; (color de fondo, si el selector es body, es el fondo del documento, si es otra cosa como p, es el fondo de esa etiqueta)</li>
+					<li>background:url (archivo de imagen/nombre de imagen.formato de imagen) (una imagen de fondo)</li>
+					<li>width:valor; (tamaño de algo)</li>
+					<li>height:valor;(la altura de algo, width la hace automáticamente)</li>
+					<li>margin:valor; (márgenes)</li>
+					<li>margin-right/left/top/bottom:valor; (margenes de un lado determinado)</li>
+					<li>padding:valor;(espacio entre elementos)</li>
+					<li>color:#código hexadecimal; (color de algo)</li>
+					<li>font-size:valor en px; (Tamaño de fuente)</li>
+					<li>font-familly:un tipo de fuente; (tipo de fuente)</li>
+					<li>text-align:center, right, left...; (alineación del texto)</li>
+					<li>line-height:valor en px; (interlineado)</li>
+					<li>list-style-type:circle/ square/ lower-alpha/ upper-roman; (esta propiedad puede especificar si aparecen números letras o símbolos en las listas)</li>
+					<li>border:valor (es más facil en px)cómo es el borde(solid, dotted...)     color del borde; (sirve para editar y añadir bordes)</li>
+					<li>text-decoration:none/underlined...; (decoración del texto)</li>
+					</ol></p>
+					<p>Hay muchos más, pero si escribes lo que quieres editar el editor de texto normalmente te da varias opciones. Además, si se sabe inglés, 
+					la mayoría de las opciones se entienden sin necesitar explicación.</p>
+				</article>
+				<article class=hola>
+					<h2 id=n>Lo más complejo de CSS</h2>
+				
+					<p>Pese a ser para dar formato a páginas web y ser bastante simple, CSS tiene alguna función y algunas cosas las cuales son un poco más complicadas e imprescindibles para diseñar un sitio web agradable visualmente.
+					Estas son:
+					<ol class=aa>
+					<li><b>hover:</b>Esta funcion es muy util y hace que la página web se vuelva mucho mejor. Es muy simple y su función principal es que 
+					al pasar el cursor por encima de algo, este cambia sus propiedades. Para utilizarla, hay que seleccionar con los selectores lo que se quiere 
+					cambiar y antes de abrir las llaves se debe escribir :hover (ejemplo: selector/es :hover{formato}). Esta función es la responsable de que 
+					el menú cambie de color al pasar el cursor, y si se utiliza de manera un poco más compleja puedes llegar a hacer una tabla como la de la derecha(pasa el cursor por ella)</li>
+					<li><b>float:</b>Float es una forma de dar formato a una página web muy util y a la vez muy compleja. Si no de utiliza correctamente, 
+					esta función puede fastidiar el formato. Por esta razón, hay que practicar y aprender a utilizarla bien. Float consiste en agrupar 
+					los elementos seleccionados por los selectores en una dirección. Su estructura es: float:left/ right/ none;. Un ejemplo de float left es mi menú.</li>
+					<li><b>position:</b>Como su nombre indica, position es la posición en la que se encuentra el texto, la cual se puede editar. Por 
+					defecto, la posición de los objetos es static, que es la posición en la que esta casi toda mi página web. No obstante, se puede cambiar 
+					a varias posiciones, pero las más simples son relative, absolute y fixed. Esta última es la más compleja de todas las posiciones, ya que 
+					hace que algo se quede en la pantalla todo el rato. </li>
+					</ol>
+					</p>
+				</article>
+			</section>
+		</section>
+			<aside>
+			<h3>Imagenes</h3>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+				
+				<table>
+			<tr>
+				<td>Elemento 1</td>
+				<td>Elemento 2</td>
+				<td>Elemento 3</td>
+				
+			</tr>
+			<tr>
+				<td>Elemento 1</td>
+				<td>Elemento 2</td>
+				<td>Elemento 3</td>
+				
+			</tr>
+			<tr>
+				<td>Elemento 1</td>
+				<td>Elemento 2</td>
+				<td>Elemento 3</td>
+				
+			</tr>
+			<tr>
+				<td>Elemento 1</td>
+				<td>Elemento 2</td>
+				<td>Elemento 3</td>
+				
+			</tr>
+			
+			
+		</table>
+			</aside><!-- google lo toma como tonteria (imagenes, publicidad...)-->
+			
+		
+		
+		<footer>
+			<p>Ricardo González Presa - 2021</p>
+		</footer>
+</body>
+</html>

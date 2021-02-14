@@ -1,0 +1,291 @@
+/*PARTE 1
+body {
+		background:black; /* Color fondo
+		color:#FFF; /* color letra en forma de hexadecimal
+}
+
+*{/*El asterisco significa selector universal
+	margin:10;
+	padding:2;
+}
+
+body {
+	font-size:30px;/*a todo el texto se le suma esto, lo que se ponga aquí, en este caso 30px, equivaldrá a un em y siempre a un rem, el em equivale a esto o a lo que se haya especificado en un valor, el cual hará que para el valor de los div por ejemplo u em será el valor del div que se haya dicho.
+}
+
+p {
+	font-size:.5em;/*.5 es como 0.5
+}
+
+h2,h3,h4,h5,h6 {
+	color:green; /*colores que puedes escribir sin código hexadecimal: aqua, black, green, red, white...
+}
+
+h1 {
+	font-size:80;
+}
+
+p {
+	color:blue;
+}
+
+p a { /*todos los elementos "a" dentro de un parrafo.
+	font-size:20px;
+	color:orange;
+}
+
+.yellow { /*esto es una clase que se debe poner en lo que se quiera modificar
+	color:rgb(53, 131, 44, .5);/*tono verde elegido de forma decimal. Si se añade a al final de rgb se puede añadir un nómero al final para modificar la opacidad
+}
+
+p {
+	color:white;
+}*/
+
+/*diseño IMPORTANTE
+body {
+	color:blue;
+	background:url(../imagenes/logo.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+h1, p{
+	background:gray;
+	width:50%;
+	margin:60px 350px;
+	padding:50;
+	height:200px;
+	border:10px solid;
+	/*display:;
+
+}*/
+/*tEXTO Y TIPOGRAFÍA
+div{
+	width:100px;
+	height:100px;
+	background:#4A88F4;
+	color:fff;
+	font-size:30px;
+	float:left;/*se colocan en linea en la posición indicada, si se pone clear:both; a una clase esta no se float
+}
+
+.caja_padre {
+	width:500px;
+	height:500px;
+	background:#000;
+	position:relative;
+}
+
+.caja {
+	position:absolute;/*Se debe poner relative para que lo de aquí abajo funcione, se pone en unidades de px. Tambien se puede poner absolute pero mejor no.
+	top:100px;
+	bottom:0;
+	right:0;
+	left:100px;
+}/*al estar caja dentro de caja_padre, al poner los valores de caja a 0 y ponerla position:Ñabsolute y poniendo caja padre a position relative, caja estará dentro de caja padre y sus valores como top o right ocurriran desde caja_padre. (video 7 de CSS)
+
+.que_guai {
+	position:fixed;/*fixes es que te sigue aunque bajes
+	left:100px;
+	top:100px;
+}
+
+p{
+	font-family:Verdana;
+	font-weight:normal;
+	text-align:center;
+	line-height:30px;
+	letter-spacing:5px;
+	word-spacing:10px;
+	text-shadow:1px 1px 0px #000;
+	/*text-transform:capitalize,uppercase o lowercase;
+	color:rgba(0,0,0,.5)
+}*/
+
+/* Propiedades imagenes
+img {
+	width:50%;
+	height:auto;
+	margin:auto;
+	display:block;
+	border-radius:5%;
+	/*box-shadow: 5px 5px 0px #000;
+	padding:10px;
+	border:1px solid #000;
+}
+
+div{
+	background:#ccc;
+	width:100%;
+}*/
+
+/*ul {
+	list-style-type:square;
+	list-style-position:inside;
+}
+
+ol{
+	list-style-type:lower-latin;
+}*/
+
+
+/*nav  {
+	position:fixed;
+	left:0px;
+	top:0px;
+	font-size:30px;
+	top:0;
+	left:18.5%;
+	right:18.5%;
+	text-align:center;
+	
+}
+
+.menu{
+	width:100%;
+	background:#000;
+	list-style:none;
+	padding:0;
+	
+}
+
+.menu li {
+	display:inline-block;
+	
+}
+
+.menu li a {
+	padding:10px 20px;
+	display:inline-block;
+	color:#fff;
+	
+}
+
+.menu li a:hover{
+	background:#ccc;
+	color:#000;
+}*/
+
+tabla
+table {
+	border-collapse:collapse;
+	border:1px solid #000;
+}
+
+table td {
+	border:1px solid #000;
+	padding:20px;
+}
+
+table tr:hover{
+	background:#92B3F8;
+}
+
+table td:hover{
+	background:#2466ED;
+	color:white;
+}
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#B2B0B1;
+}
+
+header, .main, footer {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+header nav {
+	background:#2E9404;
+	overflow:hidden; /*Se arregla el bug del formato de float left*/
+	
+}
+
+header nav ul{
+	list-style:none;
+
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	padding:10px 20px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+
+header nav ul li a:hover {
+	background:#43DD04;
+	color:#052E63;
+	text-decoration:underline;
+	font-size:115%;
+
+
+}
+
+.main .article {
+	width:68.5%;
+	float:left;
+	margin-right: 1.5%
+}
+
+
+.main .article .hola {
+	padding:20px;
+	background:#fff;
+	margin-bottom:20px;
+}
+
+aside {
+	width:60%;
+	box-sizing:border-box;
+	float:left;
+
+}
+
+footer {
+	background:#000;
+	color:#fff;
+	clear:both;
+	padding:10px 0px;
+	text-align:center;
+}
+.text {
+	text-align:center;
+	margin:5%;
+}
+
+.indice :hover{
+	color:#078BB5;
+}
+
+p {
+	font-size:20px;
+}
+
+.indice {
+	font-size:20px;
+	margin-left:5%;
+
+}
+
+.indice2 {
+	width:30%;
+	background-color:#DEFEFC;
+	padding:20px;
+	margin-bottom:20px;
+}
+
+

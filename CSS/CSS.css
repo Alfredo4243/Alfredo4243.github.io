@@ -1,0 +1,138 @@
+tabla
+table {
+	border-collapse:collapse;
+	border:1px solid #000;
+	
+}
+
+table td {
+	border:1px solid #000;
+	padding:10%;
+	width:25%;
+}
+
+table tr:hover{
+	background:#92B3F8;
+}
+
+table td:hover{
+	background:#2466ED;
+	color:white;
+}
+
+.indice :hover{
+	color:#078BB5;
+}
+
+.indice {
+	font-size:20px;
+	margin-left:5%;
+
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#B2B0B1;
+}
+
+header, .main, footer {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+header nav {
+	background:#2E9404;
+	overflow:hidden; /*Se arregla el bug del formato de float left*/
+	
+}
+
+header nav ul{
+	list-style:none;
+
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	padding:10px 20px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+
+header nav ul li a:hover {
+	background:#43DD04;
+	color:#052E63;
+	text-decoration:underline;
+	font-size:115%;
+
+
+}
+
+.main .article {
+	width:68.5%;
+	float:left;
+	margin-right: 1.5%;
+}
+
+
+.main .article .hola {
+	padding:20px;
+	background:#fff;
+	margin-bottom:20px;
+}
+
+aside {
+	width:19%;
+	float:left;
+	box-sizing:border-box;
+}
+
+footer {
+	background:#000;
+	color:#fff;
+	clear:both;
+	padding:10px 0px;
+	text-align:center;
+}
+.text {
+	text-align:center;
+	margin:5%;
+}
+
+.indice :hover{
+	color:#078BB5;
+}
+
+p {
+	font-size:20px;
+}
+
+.indice {
+	font-size:20px;
+	margin-left:5%;
+
+}
+
+.indice2 {
+	width:30%;
+	background-color:#DEFEFC;
+	padding:20px;
+	margin-bottom:20px;
+} 
+
+.aa{
+	margin-left:3%;
+	font-size:20px;
+}
+
+.r {
+	background-color:#ff8000;
+}
