@@ -7,11 +7,12 @@
 	<title>JavaScript</title>
 	<link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.jpg">
 	<script>
-		alert("bienvenido/a, en esta sección aprenderá los conocimientos básicos de JavaScript, primero le recomendamos visitar la sección de HTML y CSS o probablemente no entienda muchas cosas. Por favor, proporcione la informacion que se le indique para que la página funcione, no tiene porque ser real pero si se pide una fecha tiene que ser una fecha")
 		nom = prompt("Ingrese su nombre por favor");
+		alert("bienvenido/a, "+nom+" en esta sección aprenderá los conocimientos básicos de JavaScript, primero le recomendamos visitar la sección de HTML y CSS o probablemente no entienda muchas cosas. Por favor, proporcione la informacion que se le indique para que la página funcione, no tiene porque ser real pero si se pide una fecha tiene que ser una fecha")
+		
 		dia = prompt ("Indique la fecha por favor");
 		com = prompt ("Escriba el comentario que quiera")
-		edad = prompt ("¿Cuál es su edad?(no incluya la palabra años)")
+		edad = prompt ("¿Cuál es su edad?(no incluya la palabra años, solo el número)")
 		var datos = [nom +" "+ dia +" "+ com + " "+ edad]
 	</script>
 </head>
@@ -57,14 +58,65 @@
 					quisiera explicar todo se necesitaría un sitio web exclusivo para él. Este lenguaje sirve para que en la página web sea más dinámica e interactiva. 
 					Al igual que CSS, es necesario introducirlo en las páginas web uniendolo al archivo de HTML. Hay dos maneras de hacer esto, pero la más cómoda es crear una etiqueta llamada 
 					script y dentro de esta escribir JavaScript. No obstante, si se utiliza una cantidad de JavaScript considerable, puedes separar todo el JavaScript a documentos a parte 
-					y escribir en el documento HTML una etiqueta script con lo siguiente dentro: </p>
+					y escribir en el documento HTML una etiqueta script con lo siguiente dentro:[script src="nombre de ti archivo de JavaScript(Debe estar en la misma carpeta 
+					que el documento HTML)"][/script] (Recuerda que [] es < >, pero en esta sección solamente lo será esta vez) </p>
 				</article>
 				<article class=hola>
 					<h2 id=W>Lo más básico de JavaScript</h2>
 					<p> 
-					<script>
-						document.write(datos)
-					</script>
+						JavaScript es un lenguaje informático muy completo, así que aquí solo se verá lo más básico (desde variables hasta funciones básicas). 
+						Lo más básico de JavaScript es crear un alert. Esto es un texto que te aparece en la pantalla y te da la opción de aceptar o rechazar. Un ejemplo es lo que que has visto 
+						al entrar a esta página web. Depende de si la etiqueta script esta en head o en body, se vera la página web por detrás o no. Un alert se 
+						escribe de tres maneras: alert("texto") o alert(variable) o alert("texto"+variable+"texto"...). Para entender las dos últimas estructuras hay que explicar 
+						lo que es una variable. Una variable es un dato que la página guarda en su memoria hasta que sales de esta. Puede estar predeterminado, puede cambiar dependiendo 
+						de varios factores y puede ser determinada por el lector (como es el caso de las preguntas del principio). Su estructura es: var algo = valor;. Si se cogen las mismas 
+						estructuras que las alert pero se cambia la palabra alert por document.write, donde se ponga este texto se escribirá en el documento lo que este dentro. 
+						Ahora que conoce las variables, hay que 
+						explicar los tipos de datos. Los principales son los siquientes: 
+						<ul class=aa>
+							<li>Numéricos: Tienen el valor de un número. Si los números tienen decimales, se llaman datos numériscos float y si no tienen se llaman enteros. 
+							(por ejemplo: var x = 2; ). dentro de estas variables puede haber operaciones. (para sumar es +, para restar -, para multiplicar * y para dividir /). </li>
+							<li>Cadena de texto: Tiene el valor de un texto. (Por ejemplo: var nom = "Pepe";). Si se quieren poner comillas dentro de otras comillas, una de estas comillas debe ser 
+							reemplazada por comillas simples o tener este signo "/" antes de las comillas de dentro de las otras. </li>
+							<li>Arreglo: Tiene el valor de varios elementos. (Por ejemplo: var lala=["Pepe"+"Juan"+5];). Además, al querer seleccionar de una parte del arreglo se debe 
+							poner el nombre del arreglo y el número del elemento de este entre corchetes(Ten en cuente que se empieza a contar por 0). De esta manera, si se selecciona un 
+							elemento de un arreglo se puede modificar igualandolo al nuevo valor. Si se quiere añadir un elemento al arreglo, se selecciona un elemento del arreglo que no 
+							exista y se iguala a el valor que se quiere añadir.</li>
+							<li>Boleano: Esto sirve para tener los valores true o false. (Por ejemplo: var correcto=false;).</li>
+							<li>Valores que aparecen cuando algo no existe: Si se hace algo que no cuadra o que no existe según la lógica de JavaScript, este dará unos valores que te lo indican. Si se 
+							intenta utilizar una variable que no existe o un elemento de un arreglo inexistente, JavaScript te dira undefined. Si se quiere hacer desaparecer un valor de una variable, se debe comiat la variable y cambiar 
+							el valor a null. Finalmente, si se hace algo ilógico como multiplicar texto por un número, este te dirá NaN, que significa que no se puede.</li>
+							<li>Hay más tipos de datos como los de objetos, pero son más complejos y no se utilizarán durante este tutorial.</li>
+						</ul></p>
+					<p>
+						Una vez conocidas todas estas cosas, se pueden aprender los condicionales. Estos hacen que se cumpla algo si algo se ha cumplido anteriormente, es 
+						decir, algo se cumple con la condición de que otra cosa se cumpla. Su estructura es: if (variable signo valor){alguna función como document.write}. Hay 
+						varios tipos de signos, pero los más importantes son ==(igual) <(menor que) >(mayor que) !=(distinto) <=(menor o igual que) >=(mayor o igual que). Por ejemplo, 
+						a la derecha, donde pone lo de la mayoría de edad a la derecha tiene esta programación: if (edad<18) {document.write("eres menor de edad")} else {document.write("eres mayor de edad")} (Si quieres, prueba a poner de nuevo los datos recargando la página web).
+						Aqui hay algo que no he explicado. Si cuando se cierran las llaves ({}) se escribe else {algo}, si no se cumple lo que se tiene que cumplir 
+						para que ocurra la condición ocurrirá lo que este aquí. Si en vez de escribir else se escribe else if (condición){algo}, si algo no ocurre en la primera condición 
+						ocurrirá lo que dice en else if si se cumple su condición. Se pueden poner todos los else if que se quiera y al final también se puede poner un else. si se 
+						quieren escribir varias condiciones juntas, hay que unirlas por &&, resulrando en el siguiente esquema: if (condición) && (condición)... {algo}. En JavaScript 
+						existen los ciclos, de los cuales el más básico es el ciclo for. Este ciclo sirve para repetir algo un número de veces determinado a partir de un punto. Su estructura 
+						básica es: for (nombre de una variable que no exista (se suele llamar i) = valor; i signo(==, !=, <...) valor o variable; operación matemática que cuadre con i y el valor){algo como document.write}. 
+						Parece muy complicado, pero con un ejemplo real es más facil de entender. (for( i = 1; i <= 100; i=i+1){document.write(i + "<br>");}. 
+						Aquí se esta repitiendo un salto de linea i veces. i tiene el valor de 1 (i = 1) y se repetirá 100 veces (i <= 100; i=i+1). Finalmente, lo último 
+						que se verá en este curso serán las funciones. Son bastante simples, pero es necesario entenderlas. Tienen una utilidad parecida a las variables solo 
+						que en vez de contener un valor contienen una función. Su estructura básica es: function nombre de la función(variables que se utilizaran para la función(van separadas por comas)){ 
+						función y valor de las variables nombradas}. Para que una función ocurra hay que escribir el nombre de la función y entre parentesis las variables utilizadas. Una 
+						función puede estar dentro de una variavle de tal manera que actue como un valor, lo cual significa que al utilizar la variable estas utilizando la función. Un ejemplo real 
+						de esto es el siguiente: <br/>
+						var suma = function (numero1, numero2){ <br/>
+						var numero1 = numero1;<br/>
+						var numero2 = numero2;<br/>
+	
+						return numero1 + numero2;<br/>
+						}<br/>
+
+
+						document.write (suma(19 (esto sería numero 1),20(esto sería numero 2))); (esto es para activarla, hay que sustituir las funciones por su valor)
+						
+						
 					</p>
 				
 			</section>
