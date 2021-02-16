@@ -99,7 +99,7 @@
 						quieren escribir varias condiciones juntas, hay que unirlas por &&, resulrando en el siguiente esquema: if (condición) && (condición)... {algo}. En JavaScript 
 						existen los ciclos, de los cuales el más básico es el ciclo for. Este ciclo sirve para repetir algo un número de veces determinado a partir de un punto. Su estructura 
 						básica es: for (nombre de una variable que no exista (se suele llamar i) = valor; i signo(==, !=, <...) valor o variable; operación matemática que cuadre con i y el valor){algo como document.write}. 
-						Parece muy complicado, pero con un ejemplo real es más facil de entender. (for( i = 1; i <= 100; i=i+1){document.write(i + "<br>");}. 
+						Parece muy complicado, pero con un ejemplo real es más facil de entender. (for( i = 1; i <= 100; i=i+1){document.write(i + "[br]");}. 
 						Aquí se esta repitiendo un salto de linea i veces. i tiene el valor de 1 (i = 1) y se repetirá 100 veces (i <= 100; i=i+1). Finalmente, lo último 
 						que se verá en este curso serán las funciones. Son bastante simples, pero es necesario entenderlas. Tienen una utilidad parecida a las variables solo 
 						que en vez de contener un valor contienen una función. Su estructura básica es: function nombre de la función(variables que se utilizaran para la función(van separadas por comas)){ 
@@ -122,9 +122,18 @@
 			</section>
 		</section>
 			<aside>
-			<h3>Imagenes</h3>
+			<h3>Explicaciones</h3>
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br />			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
 				<script>
-					document.write(datos)
+					if (edad<18) {
+					document.write("eres menor de edad")
+					} else if (edad>=18) {
+					document.write("eres mayor de edad")
+					} else {
+					document.write("no has introducido un valor adecuado en edad")
+					}
 				</script>
 			</aside><!-- google lo toma como tonteria (imagenes, publicidad...)-->
 			
